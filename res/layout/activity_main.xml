@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btnPlayerTwo"
+        style="@style/btnPlayer"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/player_two" />
+
+    <Button
+        android:id="@+id/btnPlayerOne"
+        style="@style/btnPlayer"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/player_one" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnPlayerTwo"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btnPlayerOne"
+        android:layout_toRightOf="@+id/btnPlayerTwo"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo_5"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/txtPlayerTwoPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/btnPlayerTwo"
+        android:text="@string/zero_p"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txtPlayerOnePoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtPlayerTwoPoints"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/btnPlayerOne"
+        android:text="@string/zero_p"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

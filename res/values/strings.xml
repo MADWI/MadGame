@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mad Game</string>
+    <string name="action_new_game">Nowa gra</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="player_one">Gracz 1</string>
+    <string name="player_two">Gracz 2</string>
+    <string name="zero_p">0/10</string>
+    <string name="win_title">Wygrana!</string>
+    <string name="win_msg">Wygrał gracz numer </string>
+    <string name="win_msg_2">! Zagrać ponownie?</string>
+
+</resources>
